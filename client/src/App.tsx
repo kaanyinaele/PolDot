@@ -80,7 +80,11 @@ function App() {
           />
         )}
         
-        <main className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 pb-16 md:pb-6">
+        <main className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 pb-16 md:pb-6 relative">
+          {/* Decorative accent elements */}
+          <div className="absolute -top-10 -left-40 w-80 h-80 bg-gradient-radial from-pink-100/20 to-transparent rounded-full pointer-events-none" style={{ background: "radial-gradient(circle, rgba(253,242,248,0.4) 0%, rgba(253,242,248,0) 70%)" }}></div>
+          <div className="absolute -bottom-20 -right-40 w-80 h-80 bg-gradient-radial from-pink-100/20 to-transparent rounded-full pointer-events-none" style={{ background: "radial-gradient(circle, rgba(253,242,248,0.4) 0%, rgba(253,242,248,0) 70%)" }}></div>
+          
           <Router />
         </main>
         
