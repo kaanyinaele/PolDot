@@ -1,0 +1,129 @@
+Product Requirements Document (PRD)
+Project Title: DotFlow
+Goal: A lightweight, fully client-side Polkadot staking + governance hub built using PAPI and Vue.js.
+ Target Audience: Polkadot users (mobile-first & privacy-focused), validators, governance participants, new token holders.
+
+📌 1. Problem Statement
+Polkadot’s existing dApps often rely on centralized RPC endpoints, have steep learning curves, or are fragmented—one app for staking, another for governance, etc. There’s no unified, lightweight, and trustless interface that enables token holders to participate fully on-chain with zero reliance on centralized infra.
+
+🎯 2. Goals & Objectives
+✅ Build a fully decentralized dApp using PAPI's light client
+
+
+✅ Combine staking + governance features in one interface
+
+
+✅ Ensure mobile-first and RPC-independent experience
+
+
+✅ Promote active on-chain participation via a clean, intuitive UI
+
+
+✅ Open source the project for the community to fork/extend
+
+
+
+🧱 3. Core Features
+3.1 🗳 Governance Module
+View active and past referenda, proposals, and council votes
+
+
+Vote directly using wallet or via delegation
+
+
+View tally progress and timeline
+
+
+Explanation/help modals for governance jargon
+
+
+Link external discussions (Polkassembly, Matrix, etc.)
+
+
+3.2 💸 Staking Module
+Connect wallet & query nomination status
+
+
+Nominate or re-nominate validators
+
+
+Claim staking rewards
+
+
+View validator metrics (commission, era points, etc.)
+
+
+Staking activity history (from light client state)
+
+
+3.3 🧠 Onboarding & UX
+Welcome screen with light client setup & sync status
+
+
+Step-by-step "First Stake" guide
+
+
+Notifications for:
+
+
+Referenda ending soon
+
+
+New proposals
+
+
+Staking rewards available
+
+
+Multilingual support (English default, extensible)
+
+
+
+🧩 4. Tech Stack
+Layer
+Tech
+Frontend
+React
+UI
+Tailwind CSS + Headless UI (or Vuetify if preferred)
+Wallets
+Polkadot{.js} extension, QR code (Parity Signer)
+Polkadot API
+PAPI (Polkadot-API with light client support)
+Storage
+All on-chain via PAPI; optionally localStorage for settings
+State Management
+React UseState
+Optional Infra
+IPFS (for static hosting), Matrix SDK (discussions)
+
+
+🔐 5. Authentication & Wallet Handling
+Integrate @polkadot/extension-dapp for browser wallet support
+
+
+QR Code integration for mobile (Parity Signer support)
+
+
+Sign all extrinsics locally—no backend required
+
+
+Light client sync status bar (network, block height, etc.)
+
+
+
+
+✅ 6. Success Metrics
+✅ Runs fully on client, no RPC or centralized infra required
+
+
+✅ Supports complete staking and governance flows
+
+
+✅ Mobile-friendly and responsive
+
+
+✅ 95%+ of user actions signable with Polkadot extension or QR
+
+
+✅ Fully open source with MIT or Apache-2 license
