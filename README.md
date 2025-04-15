@@ -29,7 +29,7 @@ Installation
 
     Clone the repository:
 
-    git clone https://github.com/yourusername/dotflow.git
+    git clone https://github.com/yourusername/PolDot.git
     cd dotflow
 
 Install dependencies:
