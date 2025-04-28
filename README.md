@@ -112,8 +112,4 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-🙏 Acknowledgements
 
-    Polkadot Network for creating an amazing ecosystem
-    Polkadot.js for their excellent JavaScript libraries
-    All the validators and nominators who secure the Polkadot network
