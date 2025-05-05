@@ -4,7 +4,7 @@ A lightweight, fully client-side Polkadot staking and governance hub
 
 ##Overview
 
-PolDot Space is a lightweight, user-friendly web application designed to simplify interaction with the Polkadot ecosystem. It provides an intuitive interface for staking operations and governance participation directly from your browser, without requiring any backend servers or centralized infrastructure.
+PolDot Space is a lightweight, user-friendly web application designed to simplify interaction with the Polkadot ecosystem. It provides an intuitive interface for staking operations and governance participation directly from your browser.
 
 ##Key Features
 
