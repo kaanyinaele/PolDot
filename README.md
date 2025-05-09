@@ -1,115 +1,123 @@
-PolDot Space
-PD Logo
-A lightweight, fully client-side Polkadot staking and governance hub
+# PolDot Space
 
-##Overview
+*A lightweight, fully client-side Polkadot staking and governance hub.*
 
-PolDot Space is a lightweight, user-friendly web application designed to simplify interaction with the Polkadot ecosystem. It provides an intuitive interface for staking operations and governance participation directly from your browser.
+---
 
-##Key Features
+## 🌐 Overview
 
--- Staking Management: Nominate validators, view your staking info, and claim rewards
+**PolDot Space** is a streamlined, browser-based interface for engaging with the Polkadot ecosystem. Whether you're managing your staking or participating in on-chain governance, PolDot Space offers a user-friendly, self-custodial experience without requiring a backend server.
 
--- Governance: View and vote on active referenda
+---
 
--- Fully Client-Side: All blockchain interactions happen directly from your browser
+## 🚀 Key Features
 
--- Self-Custody: Connect with existing Polkadot wallets like Polkadot.js, Talisman, or SubWallet
+* **Staking Management**: Nominate validators, view staking details, and claim rewards.
+* **Governance**: Explore and vote on active referenda.
+* **Fully Client-Side**: All interactions are executed directly in the browser.
+* **Self-Custody**: Connect seamlessly with wallet extensions like [Polkadot.js](https://polkadot.js.org/), [Talisman](https://talisman.xyz/), or [SubWallet](https://subwallet.app/).
+* **Responsive Design**: Optimized for both desktop and mobile devices.
 
--- Responsive Design: Works seamlessly on desktop and mobile devices
+---
 
-##Getting Started
+## 🛠 Getting Started
 
-Prerequisites
+### Prerequisites
 
-    Node.js 18+ and npm
-    Any Polkadot wallet extension (Polkadot.js, Talisman, SubWallet, etc.)
+* [Node.js](https://nodejs.org/) v18 or higher
+* A Polkadot-compatible browser wallet extension (Polkadot.js, Talisman, SubWallet, etc.)
 
-Installation
+### Installation
 
-    Clone the repository:
-
-    git clone https://github.com/yourusername/PolDot.git
-    cd dotflow
-
-Install dependencies:
-
+```bash
+git clone https://github.com/kaanyinaele/PolDot.git
+cd PolDot
 npm install
-
-Start the development server:
-
 npm run dev
+```
 
-    Open your browser and navigate to http://localhost:3000
+Open your browser at [http://localhost:3000](http://localhost:3000)
 
-##Architecture
+---
 
-PolDot is built with a modern web stack:
+## 🧱 Architecture
 
-    Frontend: React + TypeScript
-    State Management: React Query + React Context
-    UI Framework: Custom UI components with Tailwind CSS
-    Blockchain Integration: @polkadot/api and @polkadot/extension-dapp
-    Build Tools: Vite + esbuild
+PolDot Space is built using modern web technologies for optimal performance and flexibility:
 
-The application is organized into several key modules:
+* **Frontend**: React + TypeScript
+* **State Management**: React Query + React Context
+* **UI Framework**: Custom components with Tailwind CSS
+* **Blockchain Integration**: [`@polkadot/api`](https://polkadot.js.org/docs/api/) + `@polkadot/extension-dapp`
+* **Build Tooling**: Vite + esbuild
 
-    Wallet Connection: Integration with browser extension wallets for signing transactions
-    Staking Module: Features for managing validator nominations and rewards
-    Governance Module: UI for browsing and voting on referenda
-    Light Client: Status indicators for network connection and synchronization
+### Core Modules
 
-##Usage Guide
+* **Wallet Connection**: Secure integration with browser wallets for transaction signing.
+* **Staking**: Manage nominations, view rewards, and interact with validators.
+* **Governance**: Browse and vote on referenda.
+* **Light Client Indicators**: Real-time network status and sync indicators.
 
-Connecting Your Wallet
+---
 
-    Click on "Connect Wallet" in the application header
-    Approve the connection request in your Polkadot wallet extension
-    Your wallet address and balance will appear in the header
+## 📘 Usage Guide
 
-Staking Operations
+### Connecting Your Wallet
 
-    Navigate to the "Staking" tab
-    View your current nominations and staking rewards
-    Browse available validators and nominate new validators
-    Claim rewards or adjust your staked amount
+1. Click **"Connect Wallet"** in the top navigation.
+2. Approve the connection in your wallet extension.
+3. Your address and balance will appear in the header.
 
-Participating in Governance
+### Staking
 
-    Navigate to the "Governance" tab
-    Browse the list of active and closed referenda
-    Click on a referendum to view detailed information
-    Vote "Aye" or "Nay" on active referenda using your connected wallet
+1. Navigate to the **Staking** tab.
+2. View your nominations and rewards.
+3. Select validators and nominate.
+4. Claim rewards or adjust your stake.
 
-## Development Guidelines
+### Governance
 
-Code Organization
+1. Go to the **Governance** tab.
+2. Browse active and closed referenda.
+3. Click a referendum for more info.
+4. Vote "Aye" or "Nay" using your connected wallet.
 
-    client/src/components: UI components organized by feature
-    client/src/hooks: Custom React hooks for blockchain interaction
-    client/src/lib: Utility functions and API setup
-    client/src/pages: Application pages and routes
-    client/src/types: TypeScript type definitions
+---
 
-Adding New Features
+## 🧑‍💻 Development Guidelines
 
-    Create new components in the appropriate folder
-    Add any required hooks in the hooks directory
-    Update the relevant module (Staking or Governance)
-    Add any new types to the types directory
+### Project Structure
 
-##Contributing
+```
+client/
+├── src/
+│   ├── components/     # UI components grouped by feature
+│   ├── hooks/          # Custom React hooks for Polkadot interactions
+│   ├── lib/            # Utility functions and API setup
+│   ├── pages/          # Application routes and views
+│   ├── types/          # TypeScript type definitions
+```
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+### Adding Features
 
-    Fork the repository
-    Create your feature branch (git checkout -b feature/amazing-feature)
-    Commit your changes (git commit -m 'Add some amazing feature')
-    Push to the branch (git push origin feature/amazing-feature)
-    Open a Pull Request
+* Add UI components under `components/`
+* Create any necessary hooks in `hooks/`
+* Update the corresponding module (Staking or Governance)
+* Define new types in `types/` if needed
 
-##License
+---
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+## 🤝 Contributing
 
+We welcome contributions from the community!
 
+1. Fork the repository
+2. Create a feature branch: `git checkout -b feature/your-feature`
+3. Commit your changes: `git commit -m 'feat: add your feature'`
+4. Push to your branch: `git push origin feature/your-feature`
+5. Open a Pull Request
+
+---
+
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE).
